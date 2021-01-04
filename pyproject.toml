@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "openDocs"
+version = "0.0.1"
+description = "openDocs website for mhmd.io"
+authors = ["Mohammed Yahya <my.almusaddar@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+mkdocs = "^1.1.2"
+mkdocs-diagrams = "^1.0.0"
+mkdocs-material = "^6.2.3"
+pymdown-extensions = "^8.1"
+fontawesome-markdown = "^0.2.6"
+
+[tool.poetry.dev-dependencies]
+diagrams = "^0.18.0"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -8,7 +8,7 @@
 - [pymdown-extensions](https://facelessuser.github.io/pymdown-extensions/)
 
 ```bash
-pip3 install mkdocs mkdocs-material mkdocs-diagrams pymdown-extensions
+pip3 install mkdocs mkdocs-material mkdocs-diagrams pymdown-extensions fontawesome_markdown
 ```
 
 ## Terraform DevSecOps
