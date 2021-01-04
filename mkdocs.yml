@@ -1,0 +1,112 @@
+# Project information
+site_name: OpenDocs
+site_description: DevSecOps OpenDocs - Document Everything!
+site_author: Mohammed Yahya [Almusaddar]
+site_url: https://docs.mhmd.io/
+
+# Google Analytics
+google_analytics:
+  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+  - auto
+
+# Repository
+repo_name: mhmdio/opendocs
+repo_url: https://github.com/mhmdio/opendocs
+edit_uri: ""
+
+# Copyright
+copyright: Copyright &copy; 2021 Mohammed Yahya
+
+nav:
+    - Home: index.md
+    - Books:
+      - DevOps: books/devops.md
+    - AWS:
+      - DevSecOps: aws/devsecops.md
+      - Multi Account Setup: aws/aws-multi-account.md
+      - aws-vault: aws/aws-vault.md
+      - CodeCommit Access using SSO: aws/codecommit-sso.md
+    - Terraform:
+      - Links: terraform/links.md
+      - Best Practices: terraform/best_practices.md
+      - CICD: terraform/cicd.md
+      - Modules:
+        - Terraform Backend: terraform/terraform-backend.md
+        - Terraform Organization: terraform/terraform-organization.md
+    - DevOps:
+      - Tools: devops/tools.md
+      - Container Registries: 
+        - Harbor: container_registries/harbor.md
+    - Makefile:
+      - Terraform: makefile/terraform.md
+    - OSSF: OSSF/OSSF.md
+    - Contributions: 
+      - Diagrams: contributions/diagrams.md
+    - macOS:
+      - Brew:
+        - Utils: macos/brew/utils.md
+    - Help:
+      - mkdocs: help/mkdocs.md
+      - Material for MkDocs: help/Material_MkDocs.md
+    - About: about.md
+
+theme:
+  name: material
+  palette:
+    primary: teal
+    accent: teal
+  font:
+    text: Fira Sans
+    code: Fira Code
+
+markdown_extensions:
+  - admonition
+  - abbr
+  - meta
+  - attr_list
+  - footnotes
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.tabbed
+  - pymdownx.tilde
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+extra:
+  generator: false
+  # disqus: mhmd9
+  social:
+    - icon: fontawesome/brands/docker
+      link: https://twitter.com
+    - icon: fontawesome/brands/github
+      link: https://twitter.com
+    - icon: fontawesome/brands/linkedin
+      link: https://twitter.com
+    - icon: fontawesome/brands/slack
+      link: https://twitter.com
+
+# – fontawesome/brands/docker
+# – fontawesome/brands/github
+# – fontawesome/brands/instagram
+# – fontawesome/brands/linkedin
+# – fontawesome/brands/medium
+# – fontawesome/brands/pied-piper-alt
+# – fontawesome/brands/product-hunt
+# – fontawesome/brands/slack
+# – fontawesome/brands/twitter
+
+plugins:
+  - diagrams
+  - search
