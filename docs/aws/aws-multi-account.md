@@ -101,4 +101,26 @@ Since AWS SSO is not yet supported with Terraform, Use CFN to configure SSO Perm
 
 Create Route53 top level domain `example.com`. Migrate old zone if exist.
 
-## 9 - Shared Account - Terraform Ops IAM Role
+## 9 - Shared Account - CodeCommit Repo
+
+If you are using CodeCommit to version IaC, create the repos with Terraform, then setup AWS Cli v2 with SSO and clone the repos then push commits.
+
+## 10 - Delete Default VPCs
+
+```bash
+cloud-nuke defaults-aws
+```
+
+
+## 11 - Deploy Network Stack for Prod Account
+
+VPC and route53 for top level domain.
+
+## 12 - Deploy Network Stack for other Accounts
+
+VPC and route53 for sub level domain.
+
+## 13 - Add NS Servers
+
+Other Accounts will output NS Servers for each sub level domain, add them to Prod account, where the top level domain exist.
+Update Route53 records with NS servers for each sub level domain.

@@ -21,7 +21,16 @@ nav:
     - Home: index.md
     - Books:
       - DevOps: books/devops.md
+    - DevOps:
+      - Tools: devops/tools.md
+      - Infrastructure as Code Make Framework: 
+        - IACMK: devops/iacmk/iacmk.md
+        - Makefiles:
+          - Terraform: devops/iacmk/makefile/terraform.md
+      - Container Registries: 
+        - Harbor: container_registries/harbor.md
     - AWS:
+      - AWS Config file: aws/aws-config-file.md
       - DevSecOps: aws/devsecops.md
       - Multi Account Setup: aws/aws-multi-account.md
       - aws-vault: aws/aws-vault.md
@@ -33,12 +42,7 @@ nav:
       - Modules:
         - Terraform Backend: terraform/terraform-backend.md
         - Terraform Organization: terraform/terraform-organization.md
-    - DevOps:
-      - Tools: devops/tools.md
-      - Container Registries: 
-        - Harbor: container_registries/harbor.md
-    - Makefile:
-      - Terraform: makefile/terraform.md
+
     - OSSF: OSSF/OSSF.md
     - Contributions: 
       - Diagrams: contributions/diagrams.md
