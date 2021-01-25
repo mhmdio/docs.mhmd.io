@@ -1,5 +1,9 @@
 # DevOps Daily Tools
 
+## AWS Ops
+
+- yq <https://mikefarah.gitbook.io/yq/>
+
 ## MKDocs
 
 - [mkdocs](https://www.mkdocs.org/)

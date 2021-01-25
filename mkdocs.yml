@@ -30,6 +30,7 @@ nav:
       - Container Registries: 
         - Harbor: container_registries/harbor.md
     - AWS:
+      - ECS Blue/Green CICD: ecs-blue-green.md
       - AWS Config file: aws/aws-config-file.md
       - DevSecOps: aws/devsecops.md
       - Multi Account Setup: aws/aws-multi-account.md
